@@ -19,7 +19,7 @@ var markedOptions = {
 
 browserify(path.join(__dirname, 'docs.js'))
 .transform(markedify, {marked: markedOptions})
-.transform(babelify, {presets: ['es2015']})
+.transform(babelify, {presets: ['@babel/preset-env']})
 .bundle()
 .on('error', function(err) { console.log('ERROR: ' + err); })
 .pipe(fs.createWriteStream(path.join(__dirname, 'docs-compiled.js')));

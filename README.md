@@ -1,31 +1,36 @@
-# d3-annotation
+# @sparklaboratory/d3-annotation
 
-Full documentation: [http://d3-annotation.susielu.com](http://d3-annotation.susielu.com)
+This is a forked version from [susielu](https://github.com/susielu/d3-annotation) upgraded to work on latest D3 and all dependencies upgraded.
+
+Existing documentation: [http://d3-annotation.susielu.com](http://d3-annotation.susielu.com), new documentation coming in the future.
 
 ## Setup 
 ### Include the file directly
 
 You must include the [d3 library](http://d3js.org/) before including the annotation file. Then you can add the compiled js file to your website
 
-- [Unminified](https://github.com/susielu/d3-annotation/blob/master/d3-annotation.js)
-- [Minified](https://github.com/susielu/d3-annotation/blob/master/d3-annotation.min.js)
+- [Unminified](https://github.com/thesparklaboratory/d3-annotation/blob/master/dist/d3-annotation.js)
+- [Minified](https://github.com/thesparklaboratory/d3-annotation/blob/master/dist/d3-annotation.min.js)
 
 ### Using CDN
 
-You can add the latest version of [d3-annotation hosted on cdnjs](https://cdnjs.com/libraries/d3-annotation).
+You can add the latest version of [@sparklaboratory/d3=svg-annotation hosted on jsdelivr](https://cdn.jsdelivr.net/npm/@sparklaboratory/d3-svg-annotation) or [@sparklaboratory/d3-svg-annotation hosted on unpkg](https://unpkg.com/@sparklaboratory/d3-svg-annotation).
 
 ### Using NPM
 
 You can add d3-annotation as a node module by running
 
 ```bash
-npm i d3-svg-annotation -S
+npm i @sparklaboratory/d3-svg-annotation
 ```
 
-## Feedback
-I would love to hear from you about any additional features that would be useful, please say hi on twitter [@DataToViz](https://www.twitter.com/DataToViz).
+```bash
+yarn add @sparklaboratory/d3-svg-annotation
+```
 
 ## Prior art
+
+- [Susie Lu d3-svg-annotation](https://github.com/susielu/d3-annotation) Original library
 
 - [Andrew Mollica](https://bl.ocks.org/armollica/67f3cf7bf08a02d95d48dc9f0c91f26c), [d3-ring-note](https://github.com/armollica/d3-ring-note) D3 plugin for placing circle and text annotation, and [HTML Annotation](http://bl.ocks.org/armollica/78894d0b3cbd46d8d8d19d135c6ca34d)
 

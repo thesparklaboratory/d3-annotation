@@ -1,12 +1,6 @@
 node_modules
 .DS_Store
-docs/ga.js
-docs/favicon.ico
-bower_components
 npm
-.vscode
-gifs
-*.psd
-*.zip
-blocks
 .idea
+.vscode
+dist

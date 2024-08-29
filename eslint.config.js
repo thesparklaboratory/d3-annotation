@@ -1,13 +1,17 @@
-{
-  "parser": "babel-eslint",
-  "rules": {
+const babelParser = require("@babel/eslint-parser");
+
+module.exports = {
+  languageOptions: {
+    parser: babelParser,
+  },
+  rules: {
     "array-bracket-spacing": 0,
-    "curly": 0,
-    "indent": [2, 2],
+    curly: 0,
+    indent: [2, 2],
     "no-var": 2,
     "object-curly-spacing": 0,
-    "quotes": 0,
-    "eqeqeq": 2,
+    quotes: 0,
+    eqeqeq: 2,
     "eol-last": 0,
     "prefer-const": 0,
     "no-cond-assign": 0,
@@ -19,9 +23,9 @@
     "comma-dangle": 2,
     "no-unused-expressions": [
       2,
-      { "allowShortCircuit": true, "allowTernary": true }
+      { allowShortCircuit: true, allowTernary: true },
     ],
     "no-multiple-empty-lines": 0,
-    "no-sequences": 0
-  }
-}
+    "no-sequences": 0,
+  },
+};

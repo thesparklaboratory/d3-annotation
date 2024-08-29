@@ -1,10 +1,10 @@
-import { babel } from '@rollup/plugin-babel'
-import commonjs from "@rollup/plugin-commonjs";
-import nodeResolve from 'rollup-plugin-node-resolve';
+const { babel } = require('@rollup/plugin-babel')
+const commonjs  = require("@rollup/plugin-commonjs")
+const { nodeResolve } = require('@rollup/plugin-node-resolve')
 
-let pkg = require('./package.json');
+let pkg = require('./package.json')
 
-export default {
+module.exports = {
   input: 'index.js',
   plugins: [
     commonjs(),
@@ -15,8 +15,8 @@ export default {
     {
       file: pkg.main,
       format: 'es',
-      moduleName: 'd3',
-      sourceMap: true,
+      name: 'd3',
+      sourcemap: true,
       globals: {
         'd3-selection': 'd3',
         'd3-dispatch': 'd3',

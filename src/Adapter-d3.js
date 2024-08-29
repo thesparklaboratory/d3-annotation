@@ -97,12 +97,12 @@ export default function annotation() {
   }
 
   annotation.json = function() {
-    /* eslint-disable no-console */
+     
     console.log(
       "Annotations JSON was copied to your clipboard. Please note the annotation type is not JSON compatible. It appears in the objects array in the console, but not in the copied JSON.",
       collection.json
     )
-    /* eslint-enable no-console */
+     
     window.copy(
       JSON.stringify(
         collection.json.map(a => {
